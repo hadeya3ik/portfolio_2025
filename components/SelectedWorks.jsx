@@ -53,7 +53,7 @@ function SelectedWorks() {
           </Link>
         </div>
         <div className="flex flex-col gap-4 w-full sm:w-[50%]">
-          <Link href='SmileWeb'>
+          <Link href='SmileClub'>
             <video
               className="w-full h-auto rounded-lg shadow-lg m-0 thumbnail"
               src="/videos/smile.mp4"
@@ -91,20 +91,7 @@ function SelectedWorks() {
             />
             <div className='text-xs pt-2 flex gap-2'>
               <p>Baking Horizon</p>
-              <p className='text-[#939393]'>web, react, framer motion</p>
-            </div>
-          </Link>
-          <Link href='SmileClub'>
-            <Image
-              src="/images/smileGraphic.png"
-              alt="Descriptive alt text"
-              width={600}
-              height={400}
-              className="w-full h-auto rounded-lg shadow-lg m-0 thumbnail"
-            />
-            <div className='text-xs pt-2 flex gap-2'>
-              <p>Smile Club</p>
-              <p className='text-[#939393]'>figma, design </p>
+              <p className='text-[#939393]'>branding, web, react</p>
             </div>
           </Link>
         </div>

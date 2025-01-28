@@ -22,9 +22,9 @@
 
 .thumbnail {
     cursor: pointer;
-    transition: filter 0.3s ease; /* Smooth transition for the blur effect */
+    transition: transform 0.2s ease;
 }
   
 .thumbnail:hover {
-    filter: blur(3px); /* Adjust the blur amount */
+    transform: scale(0.985);
 }
