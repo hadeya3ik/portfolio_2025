@@ -6,7 +6,7 @@ function SelectedWorks() {
   return (
     <div className="p-4 flex flex-col items-center">
       <div className=' w-full flex justify-center '>
-          <h1 className='text-xl self-start w-full max-w-4xl mb-4 flex border-b-[1px] pb-1 border-[#4c4c4c]'>selected works</h1>
+          <h1 className='text-xl self-start w-full max-w-4xl mb-4 flex border-b-[1px] pb-1 border-[#4c4c4c]'>Selected Works</h1>
       </div>
       <div className="flex flex-col sm:flex-row gap-4 w-full max-w-4xl">
         <div className="flex flex-col gap-4 w-full sm:w-[50%]">

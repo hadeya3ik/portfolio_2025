@@ -9,31 +9,31 @@ function Model({ mouse , TextCol}) {
   const { viewport } = useThree();
 
   const materialProps = {
-    thickness: 0.2,
-    roughness: 0,
+    thickness: 0.3,
+    roughness: 0.1,
     transmission: 1,
-    ior: 1,
-    chromaticAberration: 0.02,
+    ior: 1.02,
+    chromaticAberration: 0.04,
     backside: true,
   };
 
   // const materialProps = useControls({
   //   thickness: { value: 0.2, min: 0, max: 3, step: 0.05 },
-  //   roughness: { value: 0, min: 0, max: 1, step: 0.1 },
-  //   transmission: { value: 1, min: 0, max: 1, step: 0.1 },
-  //   ior: { value: 1, min: 0, max: 3, step: 0.1 },
+  //   roughness: { value: 0, min: 0, max: 1, step: 0.01 },
+  //   transmission: { value: 1, min: 0, max: 1, step: 0.01 },
+  //   ior: { value: 1, min: 0, max: 3, step: 0.01 },
   //   chromaticAberration: { value: 0.02, min: 0, max: 1 },
   //   backside: { value: true },
   // });
 
   useFrame(() => {
     if (mesh.current) {
-      const rotationX = (mouse.y.get() - 0.5) * Math.PI * 0.009;
-      const rotationY = (mouse.x.get() - 0.5) * Math.PI * 0.009;
+      const rotationX = (mouse.y.get() - 0.5) * Math.PI * 0.006;
+      const rotationY = (mouse.x.get() - 0.5) * Math.PI * 0.006;
 
       mesh.current.rotation.x += rotationX;
       mesh.current.rotation.y += rotationY;
-      mesh.current.rotation.z += 0.009; 
+      mesh.current.rotation.z += 0.003; 
     }
   });
 

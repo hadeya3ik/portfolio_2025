@@ -83,7 +83,7 @@ function page() {
               <FragmentCodeSnippet/>
             </div>
             <div className='flex flex-col'>
-              <h2 className='font-semibold text-xl'>Result</h2>
+              <h2 className='font-semibold text-xl pb-1'>Result</h2>
               <video 
                 width="100%" 
                 height="auto" 
