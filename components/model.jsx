@@ -8,23 +8,23 @@ function Model({ mouse , TextCol}) {
   const { nodes } = useGLTF("/medias/bubble_comp.glb");
   const { viewport } = useThree();
 
-  // const materialProps = {
-  //   thickness: 0.4,
-  //   roughness: 0.1,
-  //   transmission: 1,
-  //   ior: 1.02,
-  //   chromaticAberration: 0.04,
-  //   backside: true,
-  // };
+  const materialProps = {
+    thickness: 0.4,
+    roughness: 0.1,
+    transmission: 1,
+    ior: 1.02,
+    chromaticAberration: 0.04,
+    backside: true,
+  };
 
-  const materialProps = useControls({
-    thickness: { value: 0.2, min: 0, max: 3, step: 0.05 },
-    roughness: { value: 0, min: 0, max: 1, step: 0.01 },
-    transmission: { value: 1, min: 0, max: 1, step: 0.01 },
-    ior: { value: 1, min: 0, max: 3, step: 0.01 },
-    chromaticAberration: { value: 0.02, min: 0, max: 1 },
-    backside: { value: true },
-  });
+  // const materialProps = useControls({
+  //   thickness: { value: 0.2, min: 0, max: 3, step: 0.05 },
+  //   roughness: { value: 0, min: 0, max: 1, step: 0.01 },
+  //   transmission: { value: 1, min: 0, max: 1, step: 0.01 },
+  //   ior: { value: 1, min: 0, max: 3, step: 0.01 },
+  //   chromaticAberration: { value: 0.02, min: 0, max: 1 },
+  //   backside: { value: true },
+  // });
 
   useFrame(() => {
     if (mesh.current) {
