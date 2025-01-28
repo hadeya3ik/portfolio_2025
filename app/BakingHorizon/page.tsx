@@ -21,7 +21,7 @@ function page() {
           </div>
       </div>
       <div className='w-full flex justify-center '>
-          <div className='max-w-xl text-xs flex flex-col justify-center items-center w-full gap-8 pt-8'>
+          <div className='max-w-xl text-sm flex flex-col justify-center items-center w-full gap-8 pt-8'>
             <p> Created a strong brand identity for a local Bakery. This project included the design of multiple logos, business cards, and the development of a responsive company website <a className='text-[#afafaf] underline underline-offset-2' target="_blank" href='https://www.bakinghorizon.ca/'>bakinghorizon.ca</a>.</p>
             <div className='flex flex-col gap-8'>
               <Image alt='' src={pic1} className='w-full h-auto' />

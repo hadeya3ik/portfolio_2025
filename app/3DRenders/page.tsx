@@ -34,7 +34,7 @@ function page() {
           
       </div>
       <div className='flex flex-col items-start max-w-xl gap-4'>
-        <p className='text-xs text-left'>A collection of high and low poly 3D scenes made in blender.</p>
+        <p className='text-sm text-left'>A collection of high and low poly 3D scenes made in blender.</p>
         <Image alt='Project Image 1' src={pic4} className='w-full h-auto rounded-md' />
         <Image alt='Project Image 1' src={pic3} className='w-full h-auto rounded-md' />
         <Image alt='Project Image 1' src={pic2} className='w-full h-auto rounded-md' />

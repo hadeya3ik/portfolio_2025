@@ -18,7 +18,7 @@ function page() {
           </div>
       </div>
       <div className='w-full flex justify-center '>
-          <div className='max-w-xl text-xs flex flex-col justify-center items-center w-full gap-8 pt-8'>
+          <div className='max-w-xl text-sm flex flex-col justify-center items-center w-full gap-8 pt-8'>
             <p className='w-full'>Govi is a streamlined web app I built using the Govee API to make smart lighting simpler. While the official Govee app offers amazing customization and shortcuts, its interface can be a bit complex and susceptible to loading delays.</p>
             <p>Govi focuses on quick navigation, parallel requests for faster control, and the convenience of managing lights from any browser. You can find setup instructions and more details on <a className='text-[#afafaf] underline underline-offset-2' href="https://github.com/hadeya3ik/govee" target="_blank">GitHub</a>.</p>
             <div className='flex flex-col gap-8'>

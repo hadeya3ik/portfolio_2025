@@ -21,7 +21,7 @@ function page() {
           </div>
       </div>
       <div className='w-full flex justify-center '>
-          <div className='max-w-xl text-xs flex flex-col justify-center items-center w-full gap-8 pt-8'>
+          <div className='max-w-xl text-sm flex flex-col justify-center items-center w-full gap-8 pt-8'>
             <p className='w-full'>An interactive Prototype for an AI-powered health app featuring playful illustrations and characters. Made as a part of the BET350 final project.</p>
             <div className='flex flex-col gap-8'>
               <Image alt='' src={pic1} className='w-full h-auto' />

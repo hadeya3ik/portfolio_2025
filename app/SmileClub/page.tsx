@@ -21,7 +21,7 @@ function page() {
           </div>
       </div>
       <div className='w-full flex justify-center '>
-          <div className='max-w-xl text-xs flex flex-col justify-center items-center w-full gap-2'>
+          <div className='max-w-xl text-sm flex flex-col justify-center items-center w-full gap-2'>
             <div className='flex flex-row w-full justify-between  '>
               <div className=''>
                 <h2 className='font-semibold'>Role</h2>
@@ -46,7 +46,7 @@ function page() {
           </div>
       </div>
       <div className='w-full flex justify-center '>
-          <div className='max-w-xl text-xs flex flex-col justify-center items-center w-full gap-8 pt-8'>
+          <div className='max-w-xl text-sm flex flex-col justify-center items-center w-full gap-8 pt-8'>
             <div>
               <h2 className='font-semibold text-lg pb-1'>Background</h2>
               <p><a className='text-[#afafaf] underline underline-offset-2' target="_blank" href='https://www.instagram.com/uwsmileclub/'>Smile</a> is a student mental health and inner-life enrichment club focused on promoting campus wellness. As the lead of the design team for nearly a year, I have been responsible for revamping the current website, designing posts for the Instagram page and establishing a clear visual Identity for SMILE.</p>
