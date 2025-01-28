@@ -17,44 +17,19 @@ const Scene = dynamic(
 );
 
 export default function Home() {
-  const [theme, setTheme] = useState<"light" | "dark">("light");
-
+  
   const [sceneColors, setSceneColors] = useState<{ BgCol: string; TextCol: string }>({
     BgCol: "#000000",
     TextCol: "#ffffff",
   });
 
-  useEffect(() => {
-    const savedTheme =
-      localStorage.getItem("theme") ||
-      (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
-    setTheme(savedTheme as "light" | "dark");
-    document.body.classList.add("transition-colors", "duration-500", savedTheme);
-    updateSceneColors(savedTheme as "light" | "dark");
-  }, []);
-
-  const rotateTheme = () => {
-    const nextTheme = theme === "dark" ? "light" : "dark";
-    document.body.classList.replace(theme, nextTheme);
-    setTheme(nextTheme);
-    localStorage.setItem("theme", nextTheme);
-    updateSceneColors(nextTheme);
-  };
-
-  const updateSceneColors = (currentTheme: "light" | "dark") => {
-    const rootStyles = getComputedStyle(document.body);
-    setSceneColors({
-      BgCol: rootStyles.getPropertyValue("--primary").trim(),
-      TextCol: rootStyles.getPropertyValue("--primary-foreground").trim(),
-    });
-  };
-
   return (
     <main className="bg-primary text-primary-foreground">
-      <NavBar
-        theme={theme}
-        updateTheme={rotateTheme}
-      />
+       <nav className="w-full flex justify-between items-center p-4">
+      <h3>Hadeya Ikram</h3>
+      <div className="flex items-center gap-2">
+        </div>
+      </nav>
       <div className="relative">
         <Scene BgCol={sceneColors.BgCol} TextCol={sceneColors.TextCol} />
       </div>
@@ -99,21 +74,3 @@ export default function Home() {
   );
 }
 
-const NavBar: React.FC<{ theme: "light" | "dark"; updateTheme: () => void }> = ({
-  theme,
-  updateTheme,
-}) => {
-  return (
-    <nav className="w-full flex justify-between items-center p-4">
-      <h3>Hadeya Ikram</h3>
-      <div className="flex items-center gap-2">
-        {/* <div
-          onClick={updateTheme}
-          className="cursor-pointer text-primary-foreground px-4 py-2 rounded-lg"
-        >
-          {theme === "dark" ? <WiMoonFull size={24} /> : <WiMoonAltFull size={24} />}
-        </div> */}
-      </div>
-    </nav>
-  );
-};
