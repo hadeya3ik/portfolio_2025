@@ -8,7 +8,7 @@ const Scene = dynamic(
   () => import("@/components/Scene"),
   {
     loading: () => (
-      <div className="w-full bg-primary flex justify-center items-center">
+      <div className="w-full bg-primary h-[50vh] flex justify-center items-center">
         <h1 className="text-5xl">Hadeya Ikram</h1>
       </div>
     ),
@@ -18,9 +18,10 @@ const Scene = dynamic(
 
 export default function Home() {
   const [theme, setTheme] = useState<"light" | "dark">("light");
+
   const [sceneColors, setSceneColors] = useState<{ BgCol: string; TextCol: string }>({
-    BgCol: "#ffffff",
-    TextCol: "#000000",
+    BgCol: "#000000",
+    TextCol: "#ffffff",
   });
 
   useEffect(() => {
@@ -106,12 +107,12 @@ const NavBar: React.FC<{ theme: "light" | "dark"; updateTheme: () => void }> = (
     <nav className="w-full flex justify-between items-center p-4">
       <h3>Hadeya Ikram</h3>
       <div className="flex items-center gap-2">
-        <div
+        {/* <div
           onClick={updateTheme}
           className="cursor-pointer text-primary-foreground px-4 py-2 rounded-lg"
         >
           {theme === "dark" ? <WiMoonFull size={24} /> : <WiMoonAltFull size={24} />}
-        </div>
+        </div> */}
       </div>
     </nav>
   );
