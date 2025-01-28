@@ -16,6 +16,11 @@ const ppNeueMontreal = localfont({
       style: 'normal',
     },
     {
+      path: "../fonts/PPNeueMontreal-Medium.otf",
+      weight: '600',
+      style: 'normal',
+    },
+    {
       path: '../fonts/PPNeueMontreal-Book.otf',
       weight: '400',
       style: 'normal',

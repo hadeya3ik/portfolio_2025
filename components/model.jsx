@@ -40,7 +40,7 @@ function Model({ mouse , TextCol}) {
   useEffect(() => {console.log(viewport)}, [viewport])
 
   return (
-     <group scale={Math.max(0.9, viewport.width / 15)}> 
+     <group scale={Math.max(1.3, viewport.width / 15)}> 
       <Text scale={.7} position={[0, 0, 0]} color={TextCol} font="fonts/PPNeueMontreal-Book.otf" >
         Hadeya Ikram
       </Text>

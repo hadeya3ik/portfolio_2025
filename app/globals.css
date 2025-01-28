@@ -18,3 +18,13 @@
     --primary: #5a7eff;
     --primary-foreground: #f1f1f1;
 }
+
+
+.thumbnail {
+    cursor: pointer;
+    transition: filter 0.3s ease; /* Smooth transition for the blur effect */
+}
+  
+.thumbnail:hover {
+    filter: blur(3px); /* Adjust the blur amount */
+}

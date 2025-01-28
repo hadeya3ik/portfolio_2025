@@ -57,12 +57,43 @@ export default function Home() {
       <div className="relative">
         <Scene BgCol={sceneColors.BgCol} TextCol={sceneColors.TextCol} />
       </div>
-      <div className='w-full p-2 relative bg-primary'>
-        <p className='absolute right-0 bg-primary max-w-sm text-right px-2'>Designing and developing digital products. Creating experiences that feel intuitive, engaging, and impactful.</p>
+      <div className='w-full flex justify-center'>
+          <div className='text-right flex justify-end w-full max-w-4xl'>
+            <p className='text-sm px-4 text-right self-end max-w-sm'>Designing and developing digital products. Creating experiences that feel intuitive, engaging, and impactful.</p>
+            </div>
       </div>
       <div className='bg-primary h-[3rem]'>
       </div>
       <SelectedWorks/>
+      <div className="w-full flex justify-center p-4 text-[#afafaf]">
+        <div className="flex w-full border-t-[1px] pt-1 border-[#4c4c4c] text-sm justify-between max-w-4xl">
+          <a
+            href="mailto:h3ikram@uwaterloo.ca"
+            className="underline underline-offset-2 hover:text-[#ffffff] transition duration-200"
+          >
+            h3ikram@uwaterloo.ca
+          </a>
+          <div className="flex gap-4">
+            <a
+              href="https://github.com/hadeya3ik"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline underline-offset-2 hover:text-[#ffffff] transition duration-200"
+            >
+              Github
+            </a>
+            <a
+              href="https://dribbble.com/hdyik"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline underline-offset-2 hover:text-[#ffffff] transition duration-200"
+            >
+              Dribbble
+            </a>
+          </div>
+        </div>
+      </div>
+
     </main>
   );
 }
