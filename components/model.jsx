@@ -5,11 +5,11 @@ import { useControls } from 'leva';
 
 function Model({ mouse , TextCol}) {
   const mesh = useRef();
-  const { nodes } = useGLTF("/medias/bubble.glb");
+  const { nodes } = useGLTF("/medias/bubble_comp.glb");
   const { viewport } = useThree();
 
   const materialProps = {
-    thickness: 0.3,
+    thickness: 0.4,
     roughness: 0.1,
     transmission: 1,
     ior: 1.02,
